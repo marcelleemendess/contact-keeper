@@ -19,6 +19,7 @@ router.post('/', (req, res) => {
 //@desc     Update contact
 //@access   Private
 router.put('/:id', (req, res) => {
+    console.log(req.body)
     res.send('Update contact');
 });
 
@@ -28,7 +29,5 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
     res.send('Delete contact');
 });
-
-
 
 module.exports = router;
